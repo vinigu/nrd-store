@@ -1,0 +1,61 @@
+<header>
+<%- include('./topBar') %>
+<div class="header-wrapper">
+    <div class="container">
+        <div class="header-content">
+            <a href="javascript:;" class="nav-mobile-link d-block d-md-none">
+                <img src="/arquivos/nav-mobile-icon.png" alt="">
+            </a>
+            <div class="logo">
+                <a href="/">
+                    <h1 class="d-none"><%- accountTitle %></h1>
+                    <img src="/arquivos/logo.png" alt="<%- accountTitle %>">
+                </a>
+            </div>
+            <nav class="nav-main">
+                <ul class="nav-list">
+                </ul>
+            </nav>
+            <div class="right-content">
+                <div class="search-bar">
+                    <input type="text" name="search" placeholder="Buscar"/>
+                    <button class="btn btn-white"><img src="/arquivos/icon-zoom.png" alt=""></button>
+                </div>
+                <div class="user-info">
+                    <a href="#"><img src="/arquivos/icon-user.png" alt=""></a>
+                </div>
+                <div class="bag minicart">
+                    <a href="#"><img src="/arquivos/icon-bag.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<div class="search-box">
+    <div class="container">
+        <script type="text/javascript" language="javascript">
+            /*<![CDATA[*/
+            $(document).ready(function () {
+                currentDept = '0';
+                enableFullTextSearchBox('ftBox86cf1d52365f4301aa91084e7fb05764',
+                    'ftDept86cf1d52365f4301aa91084e7fb05764', 'ftIdx86cf1d52365f4301aa91084e7fb05764',
+                    'ftBtn86cf1d52365f4301aa91084e7fb05764', '/SEARCHTERM', 'Digite Aqui');
+            }); /*]]>*/
+        </script>
+        <fieldset class="busca">
+            <legend>Buscar</legend><label>Buscar</label><select id="ftDept86cf1d52365f4301aa91084e7fb05764">
+                <option value="">Todo o Site</option>
+                <option value="1">Acessórios</option>
+                <option value="114">Calçados</option>
+                <option value="138">Equipamentos</option>
+                <option value="221">Feminino</option>
+                <option value="302">Infantil</option>
+                <option value="315">Masculino</option>
+                <option value="383">Tamanhos Especiais</option>
+            </select><input type="hidden" id="ftIdx86cf1d52365f4301aa91084e7fb05764" value="">
+            <input id="ftBox86cf1d52365f4301aa91084e7fb05764" class="fulltext-search-box ui-autocomplete-input" type="text" size="20" accesskey="b" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"><input id="ftBtn86cf1d52365f4301aa91084e7fb05764" type="button" value="Buscar" class="btn-buscar" />
+        </fieldset>
+        <span class="close-search-box"><img src="/arquivos/search-close-button.png" alt="" /></span>
+    </div>
+</div>
