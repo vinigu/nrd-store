@@ -1,9 +1,13 @@
-@media (min-width:768px) and (max-width:1200px){
+@media (min-width:815px) and (max-width:1100px){
   body{
     &.home{
       .home-mosaic-wrapper{
         flex-wrap: unset;
-        gap: 15px;
+        .box-banner{
+          &:not(:last-child) {
+            margin-right: 15px;
+          } 
+        }
       }
       #main{
 
