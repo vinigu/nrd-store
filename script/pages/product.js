@@ -44,13 +44,20 @@ export default class Product {
         }
     }
 
+    contentYourRespo(){
+        $(document).ready(function(){
+            $('.portal-notify-me-ref .notifyme-title-div h3').text('Produto indisponível')
+            $('.portal-notify-me-ref form fieldset p').html(`Esse produto encontra-se indisponível <br/> Preencha o formulário e seja avisado quando o produto retornar ao nosso estoque:`)
+        })
+    }
+
     init() {
         let that = this;
 
         if ($('body').hasClass('product')) {
-
             that.productSelectColor();
             that.productSelectChange();
+            that.contentYourRespo();
         }
     }
 }
